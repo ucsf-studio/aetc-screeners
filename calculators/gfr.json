@@ -1,0 +1,89 @@
+{
+    "name": "gfr",
+    "title": "Glomerular Filtration Rate (GFR) Estimate by MDRD 4-Variable Equation",
+    "description": "",
+    "sharelink": "https://www.hiv.uw.edu/page/clinical-calculators/mdrd",
+    "changed": "2021-01-19",
+    "form": {
+        "type": {
+            "name": "Formula",
+            "configOptions": {},
+            "prompts": {
+                "model": [{
+                        "name": "sex",
+                        "component": "CalculatorSelect",
+                        "input": "select",
+                        "options": [{
+                                "text": "Male",
+                                "value": 1
+                            },
+                            {
+                                "text": "Female",
+                                "value": 0.742
+                            }
+                        ],
+                        "label": "Sex"
+                    },
+                    {
+                        "name": "age",
+                        "component": "CalculatorTextField",
+                        "input": "textfield",
+                        "validate": "number",
+                        "label": "Age (years)"
+                    }, {
+                        "name": "black",
+                        "component": "CalculatorSelect",
+                        "input": "select",
+                        "options": [{
+                                "text": "Yes",
+                                "value": 1.212
+                            },
+                            {
+                                "text": "No",
+                                "value": 1
+                            }
+                        ],
+                        "label": "Black Race"
+                    },
+                    {
+                        "name": "serum",
+                        "component": "CalculatorTextField",
+                        "input": "textfield",
+                        "validate": "number",
+                        "label": "Serum Creatinine (mg/dL)"
+                    }
+                ]
+            }
+        },
+        "scoringInfo": "GFR",
+        "calculation": {
+            "mode": "equation",
+            "equation": "175 * (this.forminput[3] ** -1.154) * (this.forminput[1] ** -0.203) * this.forminput[2] * this.forminput[0]",
+            "displayComputed": true
+        },
+        "headline": ""
+
+
+    },
+    "interpretation": {
+        "title": "MDRD 4-variable GFR Equation",
+        "text": "GFR in mL/min per 1.73 m<sup>2</sup> = 175 x SerumCr<sup>-1.154</sup> x age<sup>-0.203</sup> x 1.212 (if patient is black) x 0.742 (if female)<br><em>Notes:</em> The original Modification of Diet in Renal Disease (MDRD) equation was based on 6 variables: age, sex, ethnicity, serum creatinine, urea, and albumin (often referred to as MDRD 6). Subsequently, the MDR was simplified to a 4-variable version (MDRD-4) that included age, sex, ethnicity, and serum creatinine. This 4-variable version was later reexpressed using serum creatinine values that were standardized to reference methods. The equation shown here is the reexpressed 4-variable MDRD equation.",
+        "show": true
+    },
+    "supplemental": {
+        "title": "",
+        "text": ""
+    },
+    "sources": {
+        "title": "Sources",
+        "text": "<ul><li>Levey AS, Bosch JP, Lewis JB, Greene T, Rogers N, Roth D. A more accurate method to estimate glomerular filtration rate from serum creatinine: a new prediction equation. Modification of Diet in Renal Disease Study Group. Ann Intern Med. 1999;130:461-70.</li><li>Levey AS, Coresh J, Greene T, et al. Using standardized serum creatinine values in the modification of diet in renal disease study equation for estimating glomerular filtration rate. Ann Intern Med. 2006;145:247-54.</li></ul>",
+        "show": true
+    },
+    "acknowledgement": {
+        "title": "",
+        "text": ""
+    },
+    "footer": {
+        "text": ""
+    }
+}

@@ -1,0 +1,124 @@
+{
+    "name": "auditc",
+    "title": "Alcohol Use Disorders Identification Test (AUDIT-C)",
+    "description": "",
+    "sharelink": "https://www.hiv.uw.edu/page/substance-use/audit-c",
+    "changed": "2021-01-19",
+    "form": {
+        "type": {
+            "name": "Weighted",
+            "configOptions": {},
+            "prompts": [{
+                    "question": "How often do you have a drink containing alcohol?",
+                    "options": [{
+                            "text": "Nothing selected",
+                            "value": null
+                        }, {
+                            "text": "Never (0)",
+                            "value": 0
+                        },
+                        {
+                            "text": "Monthly or less (1)",
+                            "value": 1
+                        },
+                        {
+                            "text": "2–4 times a month (2)",
+                            "value": 2
+                        },
+                        {
+                            "text": "2–3 times a week (3)",
+                            "value": 3
+                        },
+                        {
+                            "text": "4 or more times a week (4)",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "question": "How many drinks containing alcohol do you have in a typical day when you are drinking?",
+                    "options": [{
+                            "text": "Nothing selected",
+                            "value": null
+                        }, {
+                            "text": "1 or 2 (0)",
+                            "value": 0
+                        },
+                        {
+                            "text": "3 or 4 (1)",
+                            "value": 1
+                        },
+                        {
+                            "text": "5 or 6 (2)",
+                            "value": 2
+                        },
+                        {
+                            "text": "7 to 9 (3)",
+                            "value": 3
+                        },
+                        {
+                            "text": "10 or more (4)",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "question": "How often do you have six or more drinks on one occasion?",
+                    "options": [{
+                            "text": "Nothing selected",
+                            "value": null
+                        }, {
+                            "text": "Never (0)",
+                            "value": 0
+                        },
+                        {
+                            "text": "Less than monthly (1)",
+                            "value": 1
+                        },
+                        {
+                            "text": "Monthly (2)",
+                            "value": 2
+                        },
+                        {
+                            "text": "Weekly (3)",
+                            "value": 3
+                        },
+                        {
+                            "text": "Daily or almost daily (4)",
+                            "value": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        "scoringInfo": "AUDIT-C score",
+        "calculation": {
+            "mode": "sum",
+            "displayComputed": true
+        },
+        "headline": {
+            "text": "When thinking about drug use, include illegal drug use and the use of prescription drug use other than prescribed."
+        }
+    },
+    "interpretation": {
+        "title": "Interpretation",
+        "text": "<ul><li><strong>Men,</strong> a score of 4 or more is considered positive, optimal for identifying hazardous drinking or active alcohol disorders.</li><li><strong>Women,</strong> a score of 3 or more is considered positive, optimal for identifying hazardous drinking or active alcohol disorders.</li><li><strong>NOTE:</strong> if all points are from Question 1, assume the patient is drinking below recommended limits and the medical provider should review the patient's alcohol intake during the past few months.</li></ul>",
+        "show": true
+    },
+    "supplemental": {
+        "title": "",
+        "text": ""
+    },
+    "sources": {
+        "title": "Sources",
+        "text": "National Institute on Alchol Abuse and Alcoholism.",
+        "show": true
+    },
+    "acknowledgement": {
+        "title": "",
+        "text": ""
+    },
+    "footer": {
+        "text": ""
+    }
+}

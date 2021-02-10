@@ -1,0 +1,92 @@
+{
+    "name": "bmi",
+    "title": "Body Mass Index Calculator",
+    "description": "Body mass index (BMI) is a measure of body fat based on weight and height that applies to adult men and women.",
+    "sharelink": "https://www.hiv.uw.edu/page/clinical-calculators/bmi",
+    "changed": "2021-01-19",
+    "form": {
+        "type": {
+            "name": "Formula",
+            "configOptions": {},
+            "prompts": {
+                "model": [{
+                        "name": "weight",
+                        "component": "CalculatorTextField",
+                        "input": "textfield",
+                        "validate": "number",
+                        "label": "Weight"
+                    },
+                    {
+                        "name": "weightunits",
+                        "component": "CalculatorSelect",
+                        "input": "select",
+                        "options": [{
+                                "text": "kg",
+                                "value": 1
+                            },
+                            {
+                                "text": "lb",
+                                "value": 0.453592
+                            }
+                        ],
+                        "label": "Weight units"
+                    },
+                    {
+                        "name": "height",
+                        "component": "CalculatorTextField",
+                        "input": "textfield",
+                        "validate": "number",
+                        "label": "Height"
+                    },
+                    {
+                        "name": "heightunits",
+                        "component": "CalculatorSelect",
+                        "input": "select",
+                        "options": [{
+                                "text": "in",
+                                "value": 0.0254
+                            },
+                            {
+                                "text": "m",
+                                "value": 1
+                            }
+                        ],
+                        "label": "Height units"
+                    }
+
+                ]
+            }
+        },
+        "scoringInfo": "BMI",
+        "calculation": {
+            "mode": "equation",
+            "equation": "(this.forminput[0] * this.forminput[1]) / ((this.forminput[2] * this.forminput[3]) ** 2)",
+            "displayComputed": true
+        },
+        "headline": ""
+    },
+    "interpretation": {
+        "title": "BMI and Weight Status",
+        "text": "<ul><li>Below 18.5 -- Underweight</li><li>18.5 - 24.9 -- Normal</li><li>25.0 - 29.9 -- Overweight</li><li>30 and Above -- Obese</li></ul>",
+        "show": true
+    },
+    "supplemental": {
+        "title": "",
+        "text": "",
+        "show": false
+    },
+    "sources": {
+        "title": "",
+        "text": "",
+        "show": false
+    },
+    "acknowledgement": {
+        "title": "",
+        "text": "",
+        "show": false
+    },
+    "footer": {
+        "text": "",
+        "show": false
+    }
+}

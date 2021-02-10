@@ -1,0 +1,60 @@
+{
+    "name": "phq9",
+    "title": "Patient Health Questionnaire-9 (PHQ-9)",
+    "description": "The PHQ-9 is a multipurpose instrument for screening, diagnosing, monitoring and measuring the severity of depression.",
+    "sharelink": "https://www.hiv.uw.edu/page/mental-health-screening/phq-9",
+    "changed": "2021-01-19",
+    "form": {
+        "type": {
+            "name": "Likert",
+            "configOptions": {
+                "useDefaultHeadline": true,
+                "useDefaultOptions": true
+            },
+            "prompts": {
+                "questions": [
+                    "Little interest or pleasure in doing things",
+                    "Feeling down, depressed or hopeless",
+                    "Trouble falling asleep, staying asleep, or sleeping too much",
+                    "Feeling tired or having little energy",
+                    "Poor appetite or overeating",
+                    "Feeling bad about yourself - or that you’re a failure or have let yourself or your family down",
+                    "Trouble concentrating on things, such as reading the newspaper or watching television",
+                    "Moving or speaking so slowly that other people could have noticed. Or, the opposite - being so fidgety or restless that you have been moving around a lot more than usual",
+                    "Thoughts that you would be better off dead or of hurting yourself in some way"
+                ]
+            }
+        },
+        "scoringInfo": "PHQ-9 score obtained by adding score for each question (total points)",
+        "calculation": {
+            "mode": "sum",
+            "displayComputed": true
+        },
+        "headline": {
+            "text": "The PHQ-9 is a multipurpose instrument for screening, diagnosing, monitoring and measuring the severity of depression."
+        }
+
+    },
+    "interpretation": {
+        "title": "Interpretation",
+        "text": "<ul><li>Total scores of 5, 10, 15, and 20 represent cutpoints for mild, moderate, moderately severe and severe depression, respectively.</li><li>Note: Question 9 is a single screening question on suicide risk. A patient who answers yes to question 9 needs further assessment for suicide risk by an individual who is competent to assess this risk.</li></ul>",
+        "show": true
+    },
+    "supplemental": {
+        "title": "Provisional Diagnosis and Proposed Treatment Actions",
+        "text": "<h4>PHQ-9 Score: 0–4</h4><p>Depression Severity: <b>None–minimal</b><br />Proposed Treatment Actions: None</p><h4>PHQ-9 Score: 5–9</h4><p>Depression Severity: <b>Mild</b><br />Proposed Treatment Actions: Watchful waiting; repeat PHQ-9 at follow-up</p><h4>PHQ-9 Score: 10–14</h4><p>Depression Severity: <b>Moderate</b><br />Proposed Treatment Actions:  Treatment plan, considering counseling, follow-up and\/or pharmacotherapy</p><h4>PHQ-9 Score: 15–19</h4><p>Depression Severity: <b>Moderately Severe</b><br />Proposed Treatment Actions:  Active treatment with pharmacotherapy and\/or psychotherapy</p><h4>PHQ-9 Score: 20–27</h4><p>Depression Severity: <b>Severe</b><br />Proposed Treatment Actions: Immediate initiation of pharmacotherapy and, if severe impairment or poor response to therapy, expedited referral to a mental health specialist for psychotherapy and\/or collaborative management</p>",
+        "show": true
+    },
+    "sources": {
+        "title": "Sources",
+        "text": "<ul><li>Kroenke K, Spitzer RL, Williams JB. The Patient Health Questionnaire-2: Validity of a Two-Item Depression Screener. Medical Care. 2003;41:1284-92.</li><li>Kroenke K, Spitzer RL, Williams JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med. 2001;16:606-13.</li><li>Kroenke K, Spitzer RL. The PHQ-9: a new depression diagnostic and severity measure. Psychiatr Ann. 2002;32:509-21.</li></ul>",
+        "show": true
+    },
+    "acknowledgement": {
+        "title": "",
+        "text": ""
+    },
+    "footer": {
+        "text": ""
+    }
+}

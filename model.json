@@ -1,0 +1,135 @@
+{
+	"revisionDate": "1/1/2021",
+	"modelVersion": "0.1",
+	"modelSchema": {
+		"name": {
+			"type": "string",
+			"required": true
+		},
+		"title": {
+			"type": "plain text",
+			"required": true
+		},
+		"description": {
+			"type": "escaped html",
+			"required": false
+		},
+		"form": {
+			"types": {
+				"likert": {
+					"name": "Likert",
+					"configOptions": {
+						"useDefaultHeadline": false,
+						"useDefaultOptions": false,
+						"defaults": {
+							"headline": "Over the <em>last 2 weeks,</em> how often have you been bothered by the following problems?",
+							"options": [{
+									"text": "Nothing selected",
+									"value": null
+								}, {
+									"text": "Not at all (0)",
+									"value": 0
+								},
+								{
+									"text": "Several days (1)",
+									"value": 1
+								},
+								{
+									"text": "More than half the days (2)",
+									"value": 2
+								},
+								{
+									"text": "Nearly every day (3)",
+									"value": 3
+								}
+							]
+						}
+					}
+				},
+				"weighted": {
+					"name": "Weighted",
+					"configOptions": {}
+				},
+				"formula": {
+					"name": "Formula",
+					"configOptions": {}
+				}
+			},
+			"headline": {
+				"type": "plain text",
+				"required": true
+			},
+			"prompts": [{
+				"listDefaultStyle": "ul"
+			}],
+			"scoringInfo": {
+				"type": "plain text",
+				"required": true
+			},
+			"calculation": {
+				"modes": {
+					"sum": {},
+					"count": {},
+					"equation": {},
+					"lookup": {}
+				},
+				"displayComputed": false
+			}
+		}
+	},
+	"interpretation": {
+		"title": {
+			"type": "plain text",
+			"required": true
+		},
+		"text": {
+			"type": "escaped html",
+			"required": true
+		},
+		"required": true
+	},
+	"supplemental-info": {
+		"title": {
+			"type": "plain text",
+			"required": true
+		},
+		"text": {
+			"type": "escaped html",
+			"required": true
+		},
+		"required": false
+	},
+	"sources": {
+		"title": {
+			"type": "plain text",
+			"required": true
+		},
+		"text": {
+			"type": "escaped html",
+			"required": true
+		},
+		"required": false
+	},
+	"acknowledgement": {
+		"title": {
+			"type": "plain text",
+			"required": true
+		},
+		"text": {
+			"type": "escaped html",
+			"required": true
+		},
+		"required": false
+	},
+	"footer": {
+		"title": {
+			"type": "plain text",
+			"required": true
+		},
+		"text": {
+			"type": "escaped html",
+			"required": true
+		},
+		"required": false
+	}
+}

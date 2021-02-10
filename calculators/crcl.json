@@ -1,0 +1,99 @@
+{
+    "name": "crcl",
+    "title": "Creatinine Clearance (CrCl) Calculator",
+    "description": "The most common Creatinine Clearance calculation, based on Cockcroft-Gault Equation.",
+    "sharelink": "https://www.hiv.uw.edu/page/clinical-calculators/crcl",
+    "changed": "2021-01-19",
+    "form": {
+        "type": {
+            "name": "Formula",
+            "configOptions": {},
+            "prompts": {
+                "model": [{
+                        "name": "sex",
+                        "component": "CalculatorSelect",
+                        "input": "select",
+                        "options": [{
+                                "text": "Female",
+                                "value": 0.85
+                            },
+                            {
+                                "text": "Male",
+                                "value": 1
+                            }
+                        ],
+                        "label": "Sex"
+                    },
+                    {
+                        "name": "age",
+                        "component": "CalculatorTextField",
+                        "input": "textfield",
+                        "validate": "number",
+                        "label": "Age (years)",
+                        "value": null
+                    },
+                    {
+                        "name": "weight",
+                        "component": "CalculatorTextField",
+                        "input": "textfield",
+                        "validate": "number",
+                        "label": "Weight",
+                        "value": null
+                    },
+                    {
+                        "name": "weightunits",
+                        "component": "CalculatorSelect",
+                        "input": "select",
+                        "options": [{
+                                "text": "kg",
+                                "value": 1
+                            },
+                            {
+                                "text": "lb",
+                                "value": 0.453592
+                            }
+                        ],
+                        "label": "Weight units"
+                    },
+                    {
+                        "name": "serum",
+                        "component": "CalculatorTextField",
+                        "input": "textfield",
+                        "validate": "number",
+                        "label": "Serum Creatinine (mg/dL)",
+                        "value": null
+                    }
+                ]
+            }
+        },
+        "scoringInfo": "CrCl Value (mL/min)",
+        "calculation": {
+            "mode": "equation",
+            "equation": "[( 140 - this.forminput[1] ) * ( this.forminput[2] * this.forminput[3] ) * ( this.forminput[0] )] / ( 72 * this.forminput[4] )",
+            "displayComputed": true
+        },
+        "headline": ""
+    },
+    "interpretation": {
+        "title": "Cockcroft-Gault Formula",
+        "text": "<p>Cockcroft-Gault CrCl = [(140-age) x (Wt in kg) x (0.85 if female)] / (72 x Cr)</p><p><em>Note:</em> The original Cockroft-Gault Equation listed here provides an estimate of creatinine clearance, but this original formula is not adjusted for body surface area and may be less accurate in obese patients. The Cockroft-Gault Equation typically overestimates creatinine clearance by approximately 10 to 30%.</p>",
+        "show": true
+    },
+    "supplemental": {
+        "title": "",
+        "text": ""
+    },
+    "sources": {
+        "title": "Sources",
+        "text": "Cockcroft DW, Gault MH. Prediction of creatinine clearance from serum creatinine. Nephron. 1976;16:31-41.",
+        "show": true
+    },
+    "acknowledgement": {
+        "title": "",
+        "text": ""
+    },
+    "footer": {
+        "title": "",
+        "text": ""
+    }
+}

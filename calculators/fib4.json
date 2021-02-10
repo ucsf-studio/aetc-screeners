@@ -1,0 +1,78 @@
+{
+    "name": "fib4",
+    "title": "Fibrosis-4 (FIB-4) Calculator",
+    "description": "The Fibrosis-4 score helps to estimate the amount of scarring in the liver.",
+    "sharelink": "https://www.hiv.uw.edu/page/clinical-calculators/fib-4",
+    "changed": "2021-01-19",
+    "form": {
+        "type": {
+            "name": "Formula",
+            "configOptions": {},
+            "prompts": {
+                "model": [{
+                        "name": "age",
+                        "component": "CalculatorTextField",
+                        "input": "textfield",
+                        "validate": "number",
+                        "label": "Age (years)",
+                        "value": null
+                    },
+                    {
+                        "name": "ast",
+                        "component": "CalculatorTextField",
+                        "input": "textfield",
+                        "validate": "number",
+                        "label": "AST Level (U/L)",
+                        "value": null
+                    },
+                    {
+                        "name": "platelet",
+                        "component": "CalculatorTextField",
+                        "input": "textfield",
+                        "validate": "number",
+                        "label": "Platelet Count (10<sup>9</sup>/L)",
+                        "value": null
+                    },
+                    {
+                        "name": "alt",
+                        "component": "CalculatorTextField",
+                        "input": "textfield",
+                        "validate": "number",
+                        "label": "ALT (U/L)",
+                        "value": null
+                    }
+
+                ]
+            }
+        },
+        "scoringInfo": "FIB-4 =",
+        "calculation": {
+            "mode": "equation",
+            "equation": "(this.forminput[0] * this.forminput[1]) / (this.forminput[2] * Math.sqrt(this.forminput[3]))",
+            "displayComputed": true
+        },
+        "headline": ""
+    },
+    "interpretation": {
+        "title": "Interpretation",
+        "text": "Using a lower cutoff value of 1.45, a FIB-4 score <1.45 had a negative predictive value of 90% for advanced fibrosis (Ishak fibrosis score 4-6 which includes early bridging fibrosis to cirrhosis). In contrast, a FIB-4 >3.25 would have a 97% specificity and a positive predictive value of 65% for advanced fibrosis. In the patient cohort in which this formula was first validated, at least 70% patients had values <1.45 or >3.25. Authors argued that these individuals could potentially have avoided liver biopsy with an overall accuracy of 86%.",
+        "show": true
+    },
+    "supplemental": {
+        "title": "",
+        "text": ""
+    },
+    "sources": {
+        "title": "Sources",
+        "text": "Sterling RK, Lissen E, Clumeck N, et. al. Development of a simple noninvasive index to predict significant fibrosis patients with HIV/HCV co-infection. Hepatology 2006;43:1317-1325.",
+        "show": true
+    },
+    "acknowledgement": {
+        "title": "",
+        "text": ""
+    },
+    "footer": {
+        "title": "",
+        "text": ""
+    }
+}

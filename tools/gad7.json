@@ -1,0 +1,77 @@
+{
+    "name": "gad7",
+    "title": "Generalized Anxiety Disorder 7-item (GAD-7)",
+    "description": "The Generalized Anxiety Disorder 7-item (GAD-7) is an easy-to-perform initial screening tool for generalized anxiety disorder.<sup>1</sup>",
+    "sharelink": "https://www.hiv.uw.edu/page/mental-health-screening/gad-7",
+    "changed": "2021-01-19",
+    "form": {
+        "type": {
+            "name": "Likert",
+            "configOptions": {
+                "useDefaultHeadline": true,
+                "useDefaultOptions": true
+            },
+            "prompts": {
+                "questions": [
+                    "Feeling nervous, anxious or on edge",
+                    "Not being able to stop or control worrying",
+                    "Worrying too much about different things",
+                    "Trouble relaxing",
+                    "Being so restless that it is hard to sit still",
+                    "Becoming easily annoyed or irritable",
+                    "Feeling afraid as if something awful might happen"
+                ],
+                "extra": [{
+                    "question": "How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+                    "options": [{
+                            "text": "Not difficult at all",
+                            "value": 0
+                        },
+                        {
+                            "text": "Somewhat difficult",
+                            "value": 1
+                        }, {
+                            "text": "Very difficult",
+                            "value": 2
+                        }, {
+                            "text": "Extremely difficult",
+                            "value": 3
+                        }
+
+                    ]
+                }]
+            }
+        },
+        "scoringInfo": "GAD-7 score obtained by adding score for each question (total points)",
+        "calculation": {
+            "mode": "sum",
+            "displayComputed": true
+        },
+        "headline": {
+            "text": "Some text"
+        }
+    },
+    "interpretation": {
+        "title": "Interpretation",
+        "text": "<p><strong>When screening for anxiety disorders, a score of 8 or greater represents a reasonable cut-point for identifying probable cases of generalized anxiety disorder<\/strong>; further diagnostic assessment is warranted to determine the presence and type of anxiety disorder.  Using a cut-off of 8 the GAD-7 has a sensitivity of 92% and specificity of 76% for diagnosis generalized anxiety disorder. <sup>2,3<\/sup><\/p><p>The following cut-offs correlate with level of anxiety severity:<ul><li>Score 0-4: Minimal Anxiety<\/li><li>Score 5-9: Mild Anxiety<\/li><li>Score 10-14: Moderate Anxiety<\/li><li>Score greater than 15: Severe Anxiety<\/li><\/ul><\/p><p>Based on a recent meta-analysis, some experts have recommended considering using a cut-off of 8 in order to optimize sensitivity without compromising specificity.<sup>2</sup><\/p>",
+        "show": true
+    },
+    "supplemental": {
+        "title": "Performance as Screening Tool for Anxiety Disorders",
+        "text": "<p>Although designed as a screening tool for generalized anxiety, the GAD-7 is also performs reasonably well as a screening tool for three other common anxiety disorders\u2014Panic Disorder, Social Anxiety Disorder, and Posttraumatic Stress Disorder. <sup>3<\/sup><\/p><div><table width='100%' class='calc-table'><caption>Performance of GAD-7 as Screening Tool for Anxiety Disorders<sup>3<\/sup><br>(Using GAD-7 Score Cut-off of \u226510)<\/caption><tr><th>Test<\/th><th>Sensitivity<\/th><th >Specificity<\/th><th>Positive Likelihood Ratio<\/th><\/tr><tr><td>Generalized Anxiety Disorder<\/td><td>89%<\/td><td>82%<\/td><td>5.1<\/td><\/tr><tr><td>Panic Disorder<\/td><td>74%<\/td><td>81%<\/td><td>3.9<\/td><\/tr><tr><td>Social Anxiety Disorder<\/td><td>72%<\/td><td>80%<\/td><td>3.6<\/td><\/tr><tr><td>Post-Traumatic Stress Disorder<\/td><td>66%<\/td><td>81%<\/td><td>3.5<\/td><\/tr><tr><td>Any anxiety disorder<\/td><td>68%<\/td><td>88%<\/td><td>5.5<\/td><\/tr><\/table><\/div>",
+        "show": true
+    },
+    "sources": {
+        "title": "Sources",
+        "text": "<ol><li>Spitzer RL, Kroenke K, Williams JB, L\u00F6we B. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med. 2006;166:1092-7.<\/li><li>Plummer F, Manea L, Trepel D, McMillan D. Screening for anxiety disorders with the GAD-7 and GAD-2: a systematic review and diagnostic metaanalysis. Gen Hosp Psychiatry. 2016;39:24-31.<\/li><li>Kroenke K, Spitzer RL, Williams JB, Monahan PO, L\u00F6we B. Anxiety disorders in primary care: prevalence, impairment, comorbidity, and detection. Ann Intern Med. 2007;146:317-25.<\/li><\/ol>",
+        "show": true
+    },
+    "acknowledgement": {
+        "title": "Acknowledgement",
+        "text": "The GAD-7 was developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. No permission required to reproduce, translate, display or distribute.",
+        "show": true
+    },
+    "footer": {
+        "text": ""
+    }
+}

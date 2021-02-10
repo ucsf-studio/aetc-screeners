@@ -1,0 +1,45 @@
+{
+    "name": "gad2",
+    "title": "Generalized Anxiety Disorder 2-item (GAD-2)",
+    "description": "The Generalized Anxiety Disorder 2-item (GAD-2) is a very brief and easy to perform initial screening tool for generalized anxiety disorder.",
+    "sharelink": "",
+    "changed": "2021-01-19",
+    "form": {
+        "type": {
+            "likert": {
+                "prompts": [{
+                    "questions": [
+                        "Feeling nervous, anxious or on edge",
+                        "Not being able to stop or control worrying"
+                    ]
+                }],
+                "scoringInfo": "GAD-2 score obtained by adding score for each question (total points)",
+                "calculation": {
+                    "mode": "sum"
+                }
+            }
+        }
+    },
+    "interpretation": {
+        "title": "Interpretation",
+        "text": "<strong>A score of 3 points is the preferred cut-off for identifying possible cases and in which further diagnostic evaluation for generalized anxiety disorder is warranted.</strong> Using a cut-off of 3 the GAD-2 has a sensitivity of 86% and specificity of 83% for diagnosis generalized anxiety disorder.",
+        "show": true
+    },
+    "supplemental": {
+        "title": "Performance as Screening Tool for Anxiety Disorders",
+        "text": "",
+        "show": true
+    },
+    "sources": {
+        "title": "",
+        "text": ""
+    },
+    "acknowledgement": {
+        "title": "",
+        "text": ""
+    },
+    "footer": {
+        "title": "",
+        "text": ""
+    }
+}

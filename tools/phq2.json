@@ -1,0 +1,46 @@
+{
+    "name": "phq2",
+    "title": "Patient Health Questionnaire-2 (PHQ-2)",
+    "description": "The PHQ-2 inquires about the frequency of depressed mood and anhedonia over the past two weeks. The PHQ-2 includes the first two items of the PHQ-9.<ul><li>The purpose of the PHQ-2 is to screen for depression in a \u201Cfirst-step\u201D approach.<\/li><li>Patients who screen positive should be further evaluated with the PHQ-9 to determine whether they meet criteria for a depressive disorder.&nbsp;<\/li><\/ul>",
+    "sharelink": "",
+    "changed": "2021-01-19",
+    "form": {
+        "type": {
+            "likert": {
+                "prompts": [{
+                    "questions": [
+                        "Little interest or pleasure in doing things",
+                        "Feeling down, depressed or hopeless"
+                    ]
+                }],
+                "scoringInfo": "PHQ-2 score obtained by adding score for each question (total points)",
+                "calculation": {
+                    "mode": "sum"
+                }
+            }
+        }
+    },
+    "interpretation": {
+        "title": "Interpretation",
+        "text": "<ul><li>A PHQ-2 score ranges from 0-6. The authors identified a score of 3 as the optimal cutpoint when using the PHQ-2 to screen for depression.<\/li>\r\n\t<li>If the score is 3 or greater, major depressive disorder is likely.<\/li><li>Patients who screen positive should be further evaluated with the <a href=\"phq-9\">PHQ-9<\/a>, other diagnostic instruments, or direct interview to determine whether they meet criteria for a depressive disorder.<\/li><\/ul>",
+        "show": true
+    },
+    "supplemental": {
+        "title": "Operating Characteristics of PHQ-2 as a Screener for Depressive Disorders in 580 Patients Who Had an Independent Mental Health Professional Interview",
+        "text": "<table><caption>Major Depressive Disorder (7% Prevalence)<\/caption><thead><tr><th>PHQ-2 Score<\/th><th>Sensitivity<\/th><th>Specificity<\/th><th>Positive Predictive Value (PPV*)<\/th><\/tr><\/thead><tbody><tr><td>1<\/td><td>97.6<\/td><td>59.2<\/td><td>15.4<\/td><\/tr><tr><td>2<\/td><td>92.7<\/td><td>73.7<\/td><td>21.1<\/td><\/tr><tr><td>3<\/td><td>82.9<\/td><td>90.0<\/td><td>38.4<\/td><\/tr><tr><td>4<\/td><td>73.2<\/td><td>93.3<\/td><td>45.4<\/td><\/tr><tr><td>5<\/td><td>53.7<\/td><td>96.8<\/td><td>56.4<\/td><\/tr><tr><td>6<\/td><td>26.8<\/td><td>99.4<\/td><td>78.6<\/td><\/tr><\/tbody><\/table><table><caption>Any Depressive Disorder (18% Prevalence)<\/caption><thead><tr><th>PHQ-2 Score<\/th><th>Sensitivity<\/th><th>Specificity<\/th><th>Positive Predictive Value (PPV*)<\/th><\/tr><\/thead><tbody>\r\n<tr><td>1<\/td><td>90.6<\/td><td>65.4<\/td><td>36.9<\/td><\/tr><tr><td>2<\/td><td>82.1<\/td><td>80.4<\/td><td>48.3<\/td><\/tr><tr><td>3<\/td><td>62.3<\/td><td>95.4<\/td><td>75.0<\/td><\/tr><tr><td>4<\/td><td>50.9<\/td><td>97.9<\/td><td>81.2<\/td><\/tr><tr><td>5<\/td><td>31.1<\/td><td>98.7<\/td><td>84.6<\/td><\/tr><tr><td>6<\/td><td>12.3<\/td><td>99.8<\/td><td>92.9<\/td><\/tr><\/tbody><\/table><p><u>Notes:<\/u><\/p>\t\t<ul><li>*Because the PPV varies with the prevalence of depression, the PPV will be higher in settings with a higher prevalence of depression and lower in settings with a lower prevalence.<\/li><\/ul>",
+        "show": true
+    },
+    "sources": {
+        "title": "Sources",
+        "text": "Kroenke K, Spitzer RL, Williams JB. The Patient Health Questionnaire-2: Validity of a Two-Item Depression Screener. Medical Care. 2003;41:1284-92.",
+        "show": true
+    },
+    "acknowledgement": {
+        "title": "",
+        "text": ""
+    },
+    "footer": {
+        "title": "",
+        "text": ""
+    }
+}

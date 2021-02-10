@@ -1,0 +1,103 @@
+{
+    "name": "cageaid",
+    "title": "CAGE-AID Questionnaire",
+    "description": "The CAGE Adapted to Include Drugs (CAGE-AID) Questionnaire is an adaptation of the CAGE for the purpose of conjointly screening for alcohol and drug problems. The CAGE-AID focuses on lifetime use.",
+    "sharelink": "https://www.hiv.uw.edu/page/substance-use/cage-aid",
+    "changed": "2021-01-19",
+    "form": {
+        "type": {
+            "name": "Weighted",
+            "configOptions": {},
+            "prompts": [{
+                    "question": "C: Have you ever felt that you ought to Cut down on your drinking or drug use?",
+                    "options": [{
+                            "text": "Nothing selected",
+                            "value": null
+                        }, {
+                            "text": "Yes (1)",
+                            "value": 1
+                        },
+                        {
+                            "text": "No (0)",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "question": "A: Have people Annoyed you by criticizing your drinking or drug use?",
+                    "options": [{
+                            "text": "Nothing selected",
+                            "value": null
+                        }, {
+                            "text": "Yes (1)",
+                            "value": 1
+                        },
+                        {
+                            "text": "No (0)",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "question": "G: Have you ever felt bad or Guilty about your drinking or drug use?",
+                    "options": [{
+                            "text": "Nothing selected",
+                            "value": null
+                        }, {
+                            "text": "Yes (1)",
+                            "value": 1
+                        },
+                        {
+                            "text": "No (0)",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "question": "E: Have you ever had a drink or used drugs first thing in the morning to steady your nerves or to get rid of a hangiver (Eye opener)?",
+                    "options": [{
+                            "text": "Nothing selected",
+                            "value": null
+                        }, {
+                            "text": "Yes (1)",
+                            "value": 1
+                        },
+                        {
+                            "text": "No (0)",
+                            "value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "scoringInfo": "",
+        "calculation": {
+            "mode": "sum",
+            "displayComputed": true
+        },
+        "headline": {
+            "text": "When thinking about drug use, include illegal drug use and the use of prescription drug use other than prescribed."
+        }
+    },
+    "interpretation": {
+        "title": "Interpretation",
+        "text": "<p>One or more 'yes' responses is regarded as a positive screening test, indicating possible substance use problems and need for further evaluation.</p><p><b>0–1:</b> Suggests low risk of problem drinking <br><b>2–3:</b> Indicates high suspicion for alcoholism <br><b>4:</b> Is virtually diagnostic for alcoholism </p>",
+        "show": true
+    },
+    "supplemental": {
+        "title": "",
+        "text": ""
+    },
+    "sources": {
+        "title": "Sources",
+        "text": "This tool was developed by Richard Brown, MD and Laura Saunders at the University of Wisconsin. <ul><li>Brown RL, Rounds LA. Conjoint screening questionnaires for alcohol and other drug abuse: criterion validity in a primary care practice. Wis Med J. 1995;94:135-40.</li><li>Hinkin CH, Castellon SA, Dickson-Fuhrman E, Daum G, Jaffe J, Jarvik L. Screening for drug and alcohol abuse among older adults using a modified version of the CAGE. Am J Addict. 2001;10:319-26.</li></ul>",
+        "show": true
+    },
+    "acknowledgement": {
+        "title": "",
+        "text": ""
+    },
+    "footer": {
+        "text": ""
+    }
+}
